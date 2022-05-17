@@ -19,7 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     background: rgb(18, 236, 225);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(110, 0, 255) 37%, rgb(150, 0, 255) 61%, rgb(255, 0, 255) 100%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(110, 0, 255) 41%, rgb(150, 0, 255) 61%, rgb(255, 0, 255) 100%);
 }
 
 #app-title {
@@ -28,10 +28,11 @@ main {
     font-family: arial;
     font-size: 2rem;
     color: #fff;
-    text-shadow: 3px 3px 8px #4b889f;
+    text-shadow: 3px 3px 8px #000000;
 }
 
 #form-holder {
+    margin-top: 10%;
     min-height: 20vh;
     width: 100%;
     display: flex;
