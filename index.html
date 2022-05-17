@@ -32,9 +32,14 @@
                             class="input-item text-right" required>
                     </div>
                     <div class="form-item">
-                        <label for="vat"><b>Enter Loan Interest</b> <small>(%)</small></label>
-                        <input type="number" step="any" name="vat" id="vat" placeholder="x"
-                            class="input-item text-right" required>
+                        <label for="electriRate"><b>Electricity Rate</b></label>
+                        <input type="number" step="any" name="electriRate" id="electriRate" placeholder="13.5%"
+                            class="input-item text-right" value="0.20" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="vat"><b>VAT</b> <small>(%)</small></label>
+                        <input type="number" step="any" name="vat" id="vat" placeholder="13.5%"
+                            class="input-item text-right" value="13.5" required>
                     </div>
                     <div class="form-item">
                         <button class="btn-block" id="calculate-btn" type="submit">Calculate</button>
@@ -48,20 +53,20 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td class=""><b>Principal</b></td>
-                            <td class="text-right" id="principal"></td>
+                            <td class=""><b>Total of Units</b></td>
+                            <td class="text-right" id="total_Of_Units"></td>
                         </tr>
                         <tr>
                             <td class=""><b>Annual Rate</b></td>
                             <td class="text-right" id="annual-interest"></td>
                         </tr>
                         <tr>
-                            <td class=""><b>Loan Terms</b></td>
-                            <td class="text-right" id="loan-terms"></td>
+                            <td class=""><b>Period Bill (Days)</b></td>
+                            <td class="text-right" id="bill_period_days"></td>
                         </tr>
                         <tr>
-                            <td class=""><b>Monthly Payable</b></td>
-                            <td class="text-right" id="monthly-pay"></td>
+                            <td class=""><b>Electricity Rate</b></td>
+                            <td class="text-right" id="electriRateFinal"></td>
                         </tr>
                         <tr>
                             <td class=""><b>Total Cost</b></td>
