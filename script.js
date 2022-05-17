@@ -16,9 +16,9 @@ window.onload = function() {
     loanForm.addEventListener('submit', function(e) {
         e.preventDefault()
         start_loader();
-        const principalAmount = document.getElementById('loan-amount').value;
-        const interest = document.getElementById('loan-interest').value;
-        const PayableYears = document.getElementById('loan-years').value;
+        const principalAmount = document.getElementById('number_Units').value;
+        const interest = document.getElementById('vat').value;
+        const PayableYears = document.getElementById('days_for_bill').value;
         var monthly = 0,
             pmt = 0,
             total = 0,
