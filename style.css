@@ -19,7 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     background: rgb(18, 236, 225);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(110, 0, 255) 41%, rgb(150, 0, 255) 61%, rgb(255, 0, 255) 100%);
+    background: linear-gradient(90deg, rgb(234, 232, 232) 0%, rgb(0, 255, 17) 41%, rgb(225, 255, 0) 61%, rgb(255, 166, 0) 100%);
 }
 
 #app-title {
