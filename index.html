@@ -20,7 +20,7 @@
         <h1 id="app-title">Electricity Bill</h1>
         <div id="form-holder">
             <div id="main-box">
-                <form action="" id="calculate-loan-form">
+                <form action="" id="calculate-Bill-form">
                     <div class="form-item">
                         <label for="number_Units"><b>Number of Units</b></label>
                         <input type="number" step="any" min="0" name="number_Units" id="number_Units" placeholder="xxxxx"
@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-item">
                         <label for="electriRate"><b>Electricity Rate</b></label>
-                        <input type="number" step="any" name="electriRate" id="electriRate" placeholder="13.5%"
+                        <input type="number" step="any" name="electriRate" id="electriRate" placeholder="20.0%"
                             class="input-item text-right" value="0.20" required>
                     </div>
                     <div class="form-item">
@@ -58,7 +58,7 @@
                         </tr>
                         <tr>
                             <td class=""><b>VAT(%)</b></td>
-                            <td class="text-right" id="annual-interest"></td>
+                            <td class="text-right" id="VAT"></td>
                         </tr>
                         <tr>
                             <td class=""><b>Period Bill (Days)</b></td>
@@ -69,12 +69,12 @@
                             <td class="text-right" id="electriRateFinal"></td>
                         </tr>
                         <tr>
-                            <td class=""><b>Total Cost</b></td>
+                            <td class=""><b>Bill without VAT</b></td>
                             <td class="text-right" id="total-pay"></td>
                         </tr>
                         <tr>
-                            <td class=""><b>Total Interest</b></td>
-                            <td class="text-right" id="total-interest"></td>
+                            <td class=""><b>Total with Vat</b></td>
+                            <td class="text-right" id="TotalwithVat"></td>
                         </tr>
                     </tbody>
                 
