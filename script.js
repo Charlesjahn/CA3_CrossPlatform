@@ -41,7 +41,7 @@ window.onload = function () {
             document.getElementById('bill_period_days').textContent = parseFloat(daysOfBill).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
             document.getElementById('TotalwithVat').textContent = parseFloat(totalWvat).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
             document.getElementById('total-pay').textContent = parseFloat(total).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
-            //document.getElementById('vat cost').textContent = parseFloat(totalInterest).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
+            document.getElementById('electriRateFinal').textContent = parseFloat(interest).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
             document.getElementById('result').style.display = 'table';
             document.getElementById('reset-btn').style.display = 'block';
             end_loader()
@@ -56,7 +56,7 @@ window.onload = function () {
             document.getElementById('bill_period_days').textContent = ""
             document.getElementById('TotalwithVat').textContent = ""
             document.getElementById('total-pay').textContent = ""
-
+            document.getElementById('electriRateFinal').textContent = ""
             document.getElementById('result').style.display = 'none';
             document.getElementById('reset-btn').style.display = 'none';
             end_loader()
