@@ -191,7 +191,7 @@ input:hover, input:focus{
     background-color: silver;
 }
 .btn-block:hover,.btn-block:focus{
-    background-color: #001aff;
+    background-color: #00ff91;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
