@@ -25,8 +25,15 @@ window.onload = function () {
         var total = 0,   //total without vat
             totalWvat= 0;//total with vat
 
-        total = ((parseFloat(totalUnits)) * ((parseFloat(interest)))) + ((parseFloat(daysOfBill)) * 0.04);
-        totalWvat = (total * (parseFloat(vatRate) / 100)) + total;
+            //base on the CA requirements
+            //‒ Input/ Output for Electricity Bill
+            // ‒ Number of Units: 225
+            // ‒ Billing Period (Days): 60
+            // ‒ Amount of Bill without VAT: 225 * 0.20 + 60 * 0.04 = 47.4
+            // ‒ Total payable amount including VAT (13.5%): 47.4 + 47.4 * 13.5/100 = 47.4 + 6.40 = €53.80
+            // (Rounded values up to 2 decimal places)
+            total = ((parseFloat(totalUnits)) * ((parseFloat(interest)))) + ((parseFloat(daysOfBill)) * 0.04);
+            totalWvat = (total * (parseFloat(vatRate) / 100)) + total;
 
         setTimeout(() => {
             document.getElementById('total_Of_Units').textContent = parseFloat(totalUnits).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 })
