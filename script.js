@@ -18,7 +18,7 @@ window.onload = function () {
         e.preventDefault()//if users don't type some on files which was requested on result, will remind users
         start_loader();    //will call the method
         const totalUnits = document.getElementById('number_Units').value;
-        const interest = document.getElementById('electriRate').value;
+        const electriRate = document.getElementById('electriRate').value;
         const daysOfBill = document.getElementById('days_for_bill').value;
         const vatRate = document.getElementById('vat').value;
         
@@ -32,7 +32,7 @@ window.onload = function () {
             // ‒ Amount of Bill without VAT: 225 * 0.20 + 60 * 0.04 = 47.4
             // ‒ Total payable amount including VAT (13.5%): 47.4 + 47.4 * 13.5/100 = 47.4 + 6.40 = €53.80
             // (Rounded values up to 2 decimal places)
-            total = ((parseFloat(totalUnits)) * ((parseFloat(interest)))) + ((parseFloat(daysOfBill)) * 0.04);
+            total = ((parseFloat(totalUnits)) * ((parseFloat(electriRate)))) + ((parseFloat(daysOfBill)) * 0.04);
             totalWvat = (total * (parseFloat(vatRate) / 100)) + total;
 
         setTimeout(() => {
@@ -41,7 +41,7 @@ window.onload = function () {
             document.getElementById('bill_period_days').textContent = parseFloat(daysOfBill).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
             document.getElementById('TotalwithVat').textContent = parseFloat(totalWvat).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
             document.getElementById('total-pay').textContent = parseFloat(total).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
-            document.getElementById('electriRateFinal').textContent = parseFloat(interest).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
+            document.getElementById('electriRateFinal').textContent = parseFloat(electriRate).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 });
             document.getElementById('result').style.display = 'table';
             document.getElementById('reset-btn').style.display = 'block';
             end_loader()
