@@ -1,7 +1,7 @@
 html,
 body {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     padding: 0!important;
     margin: unset;
 }
@@ -12,7 +12,7 @@ body * {
 
 main {
     margin: unset !important;
-    height: auto;
+    height: auto;/*has changed height & width 100% to auto to display properly*/
     width: auto;
     display: flex;
     flex-direction: column;
@@ -23,9 +23,9 @@ main {
     position: relative;
 }
 footer {
-    display: block;
+
     text-align:center;
-}
+}/*has added footer style, text in center*/
 #app-title {
     margin: 1rem 4rem;
     text-align: center;
