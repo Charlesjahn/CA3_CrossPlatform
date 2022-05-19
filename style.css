@@ -19,7 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     background: rgb(18, 236, 225);
-    background: linear-gradient(90deg, rgb(234, 232, 232) 0%, rgb(0, 255, 17) 41%, rgb(225, 255, 0) 61%, rgb(255, 166, 0) 100%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(72, 0, 155) 41%, rgb(100, 0, 214) 61%, rgb(123, 1, 172) 100%);
     position: relative;
 }
 footer {
@@ -191,10 +191,17 @@ input:hover, input:focus{
     background-color: silver;
 }
 .btn-block:hover,.btn-block:focus{
-    background-color: #00ff91;
+    background-color: #0011ff;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+footer{
+    width: 100%;
+    background-color: #e4f0fa;
+    margin-top: 15px;
+    position:sticky;
+    bottom: 0;
 }
