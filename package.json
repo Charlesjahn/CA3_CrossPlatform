@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fd2523922841259dfd2ccf8d4fabdce133ee84434a11e4b7b6b4e9b6124fb93
-size 286
+{
+    "name": "electricity_bill",
+    "version": "1.0.0",
+    "main": "index.html",
+    "dependencies": {
+      "async": "^2.1.4",
+      "nw": "^0.63.1",
+      "nw-builder": "^3.5.7",
+      "nwbuild": "^0.0.5",
+      "osenv": "^0.1.4"
+    },
+      "devDependencies": {
+        "mocha": "^3.2.0"
+      }
+  }
